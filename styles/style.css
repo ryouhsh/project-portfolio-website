@@ -16,6 +16,13 @@ h6 {
 
 body {
   background-color: #efefef;
+  overflow-x: hidden;
+}
+body nav {
+  background-color: #efefef;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 body nav ul {
   display: flex;
@@ -55,7 +62,7 @@ body main section.main-area div.intro a {
   color: #efefef;
   background-color: #36d48a;
   padding: 0.25rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   border-radius: 20px;
   display: inline-block;
   margin-top: 2rem;
@@ -96,7 +103,7 @@ body main section.resume {
   padding: 2rem;
 }
 body main section.resume section.table {
-  flex: 5 1 500px;
+  flex: 5 0 500px;
   padding: 2rem;
 }
 body main section.resume section.table table {
@@ -160,4 +167,26 @@ body main section.resume section.picture div.greenRect3 {
   top: 0;
   left: -100px;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.about-me section.description {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.picture div.greenRect1,
+  body main section.resume section.picture div.greenRect2,
+  body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
