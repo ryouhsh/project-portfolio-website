@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Tektur", "Noto Sans TC", cursive;
 }
 
 h1,
@@ -13,7 +14,7 @@ h6 {
   font-weight: normal;
 }
 
-body nav {
+body {
   background-color: #efefef;
 }
 body nav ul {
@@ -34,7 +35,6 @@ body nav ul li a:hover {
 }
 body main section.main-area {
   min-height: 70vh;
-  background-color: #efefef;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,6 +43,7 @@ body main section.main-area {
 body main section.main-area div.intro {
   flex-basis: 450px;
   padding: 1rem;
+  margin-right: 1.5rem;
 }
 body main section.main-area div.intro h1 {
   font-size: 3.5rem;
@@ -65,8 +66,26 @@ body main section.main-area div.intro a:hover {
   transform: scale(1.2);
 }
 body main section.main-area div.intro-img {
+  margin-left: 1.25rem;
   flex-basis: 450px;
 }
 body main section.main-area div.intro-img img {
   width: 100%;
+}
+body main section.about-me {
+  background-color: rgba(231, 255, 233, 0.7);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+body main section.about-me section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description .progress-bar-area p {
+  text-align: left;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,12 @@
 $color_white: #efefef;
 $color_green: #36d48a;
+$color_light_green: rgba(231, 255, 233, 0.7);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Tektur", "Noto Sans TC", cursive;
 }
 
 h1,
@@ -17,8 +19,8 @@ h6 {
 }
 
 body {
+  background-color: $color_white;
   nav {
-    background-color: $color_white;
     ul {
       display: flex;
       li {
@@ -40,7 +42,6 @@ body {
   main {
     section.main-area {
       min-height: 70vh;
-      background-color: $color_white;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -49,6 +50,7 @@ body {
       div.intro {
         flex-basis: 450px;
         padding: 1rem;
+        margin-right: 1.5rem;
         h1 {
           font-size: 3.5rem;
         }
@@ -72,9 +74,31 @@ body {
       }
 
       div.intro-img {
+        margin-left: 1.25rem;
         flex-basis: 450px;
         img {
           width: 100%;
+        }
+      }
+    }
+
+    section.about-me {
+      background-color: $color_light_green;
+      padding: 5rem 0rem;
+      display: flex;
+      justify-content: center;
+
+      section.description {
+        width: 50%;
+        text-align: center;
+        h2 {
+          font-size: 2rem;
+        }
+        .progress-bar-area {
+          p {
+            text-align: left;
+            margin-top: 1rem;
+          }
         }
       }
     }
